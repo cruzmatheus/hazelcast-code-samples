@@ -16,7 +16,7 @@ services:
     volumes:
         - ../resources:/configFolder
     environment:
-        - JAVA_OPTS=-Dhazelcast.config=/configFolder/hazelcast.xml -Dhazelcast.mancenter.url=http://mancenter:8080/mancenter -Dgroup.name=hz-compose -Dgroup.password=s3crEt
+        - JAVA_OPTS=-Dhazelcast.config=/configFolder/hazelcast.xml -Dhazelcast.mancenter.url=http://mancenter:8080/hazelcast-mancenter -Dgroup.name=hz-compose -Dgroup.password=s3crEt
 #        ports:
 #            - 5701:5701
     links:
